@@ -33,7 +33,7 @@
                 <span asp-validation-for="ImageUrl" class="text-danger"></span>
             </div>
             <input type="hidden" asp-for="Id" />
-            <input type="hidden" value="@Model.ImageUrl" />
+            <input type="hidden" asp-for="ImageUrl" value="@Model.ImageUrl" />
                 <input asp-for="CreationDate" type="hidden" class="form-control" />
                 
             

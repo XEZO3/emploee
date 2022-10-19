@@ -63,8 +63,10 @@ namespace emploee.Controllers
         {
             collection.UpdateDate = DateTime.Now;
             var file = HttpContext.Request.Form.Files;
+            if (file.Count == 0) {
+                collection.ImageUrl = uploadfile(file);
+            }
             
-            collection.ImageUrl = uploadfile(file);
             _context.Emploees.Update(collection);
 
             _context.SaveChanges();
