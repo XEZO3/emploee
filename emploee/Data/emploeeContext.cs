@@ -12,7 +12,7 @@ namespace emploee.Data
         public DbSet<Emploee> Emploees { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-            builder.UseSqlServer("Server=LAPTOP-BFFJ9SQ9;Database=emploee;Trusted_Connection=True");
+            builder.UseSqlServer("Server=DESKTOP-JD76U9C;Database=emploee;Trusted_Connection=True");
         }
     }
 }
